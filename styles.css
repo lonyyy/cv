@@ -1,0 +1,164 @@
+* {
+  font-family: "Epilogue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  color: white;
+  user-select: none;
+}
+
+body {
+  background: linear-gradient(-45deg, #0c0c16, #1d0e1b, #13081d) no-repeat;
+  background-attachment: fixed;
+  /* background-size: 400% 400%; */
+  height: 100vh;
+}
+
+/* Navbar */
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem 5rem;
+  z-index: 5;
+  gap: 2rem;
+  /* backdrop-filter: blur(20px); */
+  /* TODO: Only enable on scroll */
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* Button */
+
+button,
+.button {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1.2rem 0.3rem 1.2rem;
+  border-radius: 5rem;
+}
+
+/* SECTIONS */
+
+.scroll-next {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 13%;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  animation: bounce 3s infinite;
+  gap: 0.2rem;
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
+
+.scroll-next:hover {
+  opacity: 1;
+}
+
+.scroll-next img {
+  animation: bounceSoft 3s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes bounceSoft {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-1px);
+  }
+}
+
+/* Me section */
+
+.me-section {
+  display: flex;
+  align-items: center;
+  padding: 5rem 5rem;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.me-section h1 {
+  font-size: 4.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.me-section .me-section__description {
+  transform: translateX(-25%);
+  width: 60%;
+}
+
+.me-section .me-section__img-background {
+  /* min-width: 300px; */
+  /* width: 500px; */
+  max-width: 600px;
+  object-position: bottom;
+  margin-left: 5rem;
+  height: 115vh;
+  object-fit: contain;
+  border-radius: 50%;
+  /* TODO: Blur on scroll */
+  opacity: 0.6;
+  margin-right: 2rem;
+  filter: grayscale(50%) brightness(0.8);
+}
+
+/* Experience section */
+
+.experience-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 4rem;
+  height: 90vh;
+  background: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(194, 161, 225, 0.05)
+    )
+    no-repeat;
+  background-size: 400% 400%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 5rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(20px);
+}
