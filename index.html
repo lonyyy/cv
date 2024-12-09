@@ -11,13 +11,17 @@
     />
     <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Lony Michaux — CV numérique</title>
   </head>
-  <body>
+  <body class="loading">
     <nav>
-      <a href="#my-experience">Mon expérience</a>
+      <h1>Lony MICHAUX</h1>
+
+      <a href="#my-formation">Ma formation</a>
       <a href="#my-projects">Mes projets</a>
-      <a class="button" href="#contact-me">Me contacter</a>
+      <a href="#my-skills">Mes compétences</a>
+      <a class="button" href="mailto:michaux.lony@gmail.com">Me contacter</a>
     </nav>
 
     <main>
@@ -25,12 +29,12 @@
         <img
           class="me-section__img-background"
           src="assets/images/me.png"
-          alt="ma silhouette"
+          alt="Photo de ma silhouette"
         />
 
         <div class="me-section__description">
           <h1>Lony MICHAUX</h1>
-          <p>
+          <p class="me-section__description-paragraph">
             Étudiant en deuxième année de BUT Informatique à l’Université de
             Lille, je suis particulièrement intéressé par le développement
             d’applications mobiles et la création d’expériences utilisateur
@@ -38,15 +42,390 @@
           </p>
         </div>
 
-        <div class="scroll-next">
-          <img src="assets/images/arrow.svg" width="20" height="20" alt="" />
-          <span>Mon expérience</span>
+        <div>
+          <a href="#my-formation" class="scroll-next">
+            <img src="assets/images/arrow.svg" width="20" height="20" alt="" />
+            <span>Ma formation</span>
+          </a>
         </div>
       </section>
 
-      <section class="experience-section">
-        <h1>Mon expérience</h1>
+      <section class="formation-section" id="my-formation">
+        <h1>Ma formation</h1>
+
+        <table>
+          <div class="formation-section__line">
+            <tr>
+              <td>
+                <h3>2023 - ajd.</h3>
+              </td>
+              <td>
+                <h3>BUT informatique</h3>
+                <p>
+                  2ème année, Parcours réalisation d'applications : conception,
+                  développement, validation
+                </p>
+                <img
+                  class="formation-section__logo"
+                  src="./assets/images/universite_lille.png"
+                  alt="Logo Université de Lille"
+                  width="140"
+                />
+              </td>
+            </tr>
+          </div>
+
+          <div class="formation-section__line">
+            <tr>
+              <td>
+                <h3>2023</h3>
+              </td>
+              <td>
+                <h3>Baccalauréat</h3>
+                <p>N.S.I, Mathématiques</p>
+
+                <i>Lycée Polyvalent Ernest Couteaux, Saint-Amand-les-Eaux</i>
+              </td>
+            </tr>
+          </div>
+        </table>
       </section>
+
+      <section class="projects-section" id="my-projects" data-aos="fade-right">
+        <div>
+          <div class="projects-list">
+            <h1>Mes projets</h1>
+
+            <div class="projects-timeline">
+              <a
+                href="#project-yudel"
+                id="projects-timeline__yudel"
+                class="projects-timeline__project"
+              >
+                <h3>Yudel</h3>
+                <small>2021 - ajd.</small>
+              </a>
+              <a
+                href="#project-donjon-hexagone"
+                id="projects-timeline__donjon-hexagone"
+                class="projects-timeline__project"
+              >
+                <h3>Donjon Hexagone</h3>
+                <small>2021 - ajd.</small>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="project-content"
+            data-aos="zoom-in-right"
+            id="project-yudel"
+          >
+            <div class="project-content__top">
+              <div class="project-description">
+                <div class="project-logo-and-title">
+                  <img
+                    src="assets/images/logos/yudel.png"
+                    class="project-logo"
+                    alt="Logo"
+                  />
+                  <h1>Yudel</h1>
+                </div>
+                <small>Projet personnel</small>
+
+                <p>
+                  Application permettant de télécharger et donc de lire de la
+                  musique même hors-ligne.
+                </p>
+                <a
+                  class="button"
+                  target="_blank"
+                  href="https://github.com/lonyyy/yudel-releases/releases/download/demo/yudel-demo.apk"
+                  >Télécharger la version démo (APK)</a
+                >
+              </div>
+
+              <div class="project-specifications">
+                <div class="project-specification">
+                  <h2>Technologies</h2>
+                  <div>Dart avec Flutter, SQL</div>
+                </div>
+
+                <div class="project-specification">
+                  <h2>Fonctionnalités</h2>
+                  <div>
+                    <ul>
+                      <li>Téléchargeur de musique</li>
+                      <li>Lecteur de musique</li>
+                      <li>Système de playlists</li>
+                      <li>Système d’ambiance sonore (ex : pluie...)</li>
+                      <li>Interface fluide et pratique</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="project-specification">
+                  <h2>Versions</h2>
+                  <div>
+                    <a
+                      href="https://github.com/lonyyy/yudel-releases/releases"
+                      target="_blank"
+                    >
+                      https://github.com/lonyyy/yudel-releases/releases</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-screenshots">
+              <h2>Visuels</h2>
+
+              <div class="project-screenshots-carousel">
+                <img
+                  src="assets/images/screens/yudel/1.jpg"
+                  alt="Capture d'écran de l'application Yudel"
+                />
+                <img
+                  src="assets/images/screens/yudel/2.jpg"
+                  alt="Capture d'écran de l'application Yudel"
+                />
+                <img
+                  src="assets/images/screens/yudel/3.jpg"
+                  alt="Capture d'écran de l'application Yudel"
+                />
+                <img
+                  src="assets/images/screens/yudel/4.jpg"
+                  alt="Capture d'écran de l'application Yudel"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="project-content"
+            data-aos="zoom-in-right"
+            id="project-donjon-hexagone"
+          >
+            <div class="project-content__top">
+              <div class="project-description">
+                <div class="project-logo-and-title">
+                  <img
+                    src="assets/images/logos/donjon-hexagone.png"
+                    class="project-logo"
+                    alt="Logo"
+                  />
+                  <h1>Donjon Hexagone</h1>
+                </div>
+
+                <small>Projet universitaire</small>
+
+                <p>
+                  Jeu tour par tour ("rogue-like") où le joueur avance à travers
+                  des niveaux et des étages où il rencontrera des monstres et
+                  des objets qui l'aideront dans cette aventure.
+                </p>
+                <a
+                  class="button"
+                  target="_blank"
+                  href="https://github.com/lonyyy/donjon-hexagone-agile"
+                  >Accéder au GitHub</a
+                >
+              </div>
+
+              <div class="project-specifications">
+                <div class="project-specification">
+                  <h2>Technologies</h2>
+                  <div>Java, JUnit, Terminal, Méthode agile en groupe de 6</div>
+                </div>
+
+                <div class="project-specification">
+                  <h2>Fonctionnalités</h2>
+                  <div>
+                    <ul>
+                      <li>Jeu tour par tour</li>
+                      <li>Système d'inventaire</li>
+                      <li>Affichage des statistiques</li>
+                      <li>Sauvegarde de la progression</li>
+                      <li>Affichage des monstres et coffres en ASCII</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="project-specification">
+                  <h2>Code source</h2>
+                  <div>
+                    <a
+                      href="https://github.com/lonyyy/donjon-hexagone-agile"
+                      target="_blank"
+                    >
+                      https://github.com/lonyyy/donjon-hexagone-agile</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-screenshots">
+              <h2>Visuels</h2>
+
+              <div class="project-screenshots-carousel">
+                <img
+                  src="assets/images/screens/donjon-hexagone/1.png"
+                  alt="Capture d'écran du jeu Donjon Hexagone"
+                />
+                <img
+                  src="assets/images/screens/donjon-hexagone/2.png"
+                  alt="Capture d'écran du jeu Donjon Hexagone"
+                />
+                <img
+                  src="assets/images/screens/donjon-hexagone/3.png"
+                  alt="Capture d'écran du jeu Donjon Hexagone"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section" id="my-skills" data-aos="fade-right">
+        <h1>Mes compétences</h1>
+
+        <div class="skills-list">
+          <div class="skills-category skills-category-soft-skills">
+            <h3>Soft skills</h3>
+            <ul>
+              <li>- Communication</li>
+              <li>- Créativité</li>
+              <li>- Adaptabilité</li>
+              <li>- Organisation</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h3>Langages</h3>
+            <ul>
+              <li>
+                <img src="assets/images/skills/langages/java.png" alt="Java" />
+                Java
+              </li>
+              <li>
+                <img src="assets/images/skills/langages/dart.png" alt="Dart" />
+                Dart
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/langages/html-css.png"
+                  alt="HTML/CSS"
+                />
+                HTML/CSS
+              </li>
+              <li>
+                <img src="assets/images/skills/langages/js.png" alt="JS" />
+                JavaScript
+              </li>
+              <li>
+                <img src="assets/images/skills/langages/sql.png" alt="SQL" />
+                SQL
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/langages/python.png"
+                  alt="Python"
+                />
+                Python
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h3>Outils</h3>
+            <ul>
+              <li>
+                <img src="assets/images/skills/tools/git.png" alt="Git" />
+                Git
+              </li>
+              <li>
+                <img src="assets/images/skills/tools/vscode.png" alt="VSCode" />
+
+                Visual Studio Code
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/tools/intellij.png"
+                  alt="IntelliJ Idea"
+                />
+
+                IntelliJ IDEA
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/tools/androidstudio.png"
+                  alt="Android Studio"
+                />
+
+                Android Studio
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h3>Langues</h3>
+            <ul>
+              <li>
+                <img src="assets/images/skills/flags/france.webp" />
+                Français (langue maternelle)
+              </li>
+              <li>
+                <img src="assets/images/skills/flags/uk.png" />
+                Anglais (niveau B2)
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h3>Logiciels</h3>
+            <ul>
+              <li>
+                <img
+                  src="assets/images/skills/software/photoshop.png"
+                  alt="Photoshop"
+                />
+                Adobe Photoshop
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/software/audition.png"
+                  alt="Audition"
+                />Adobe Audition
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/software/premierepro.png"
+                  alt="Premiere Pro"
+                />
+                Adobe Premiere Pro
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/software/resolve.png"
+                  alt="Photoshop"
+                />
+                DaVinci Resolve
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/software/figma.png"
+                  alt="Figma"
+                />Figma
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- TODO: Dernière section : Accéder au CV format PDF -->
     </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
