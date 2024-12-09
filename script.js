@@ -55,7 +55,7 @@ function centerAnchorOnScreen() {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
       const scrollX = window.scrollX || document.documentElement.scrollLeft;
 
-      const centerY = targetRect.top + scrollY - window.innerHeight / 2 + 20;
+      const centerY = targetRect.top + scrollY - window.innerHeight / 2;
 
       window.scrollTo({
         top: centerY,
