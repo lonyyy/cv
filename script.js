@@ -1,9 +1,9 @@
 const body = document.querySelector("body");
 
+const nav = document.querySelector("nav");
+
 window.addEventListener("scroll", () => {
   const scrolled = window.scrollY;
-
-  const nav = document.querySelector("nav");
 
   if (scrolled > 10) {
     nav.classList.add("scrolled");
@@ -81,4 +81,10 @@ document.addEventListener("click", function (event) {
       centerAnchorOnScreen(hash);
     }
   }
+});
+
+const burgerMenuButton = document.querySelector(".burger-menu-button");
+
+burgerMenuButton.addEventListener("click", () => {
+  nav.classList.toggle("active");
 });

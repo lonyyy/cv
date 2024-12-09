@@ -24,6 +24,10 @@ a {
   transition: filter 1.2s, opacity 0.2s, transform 0.5s;
 }
 
+.burger-menu-button {
+  display: none;
+}
+
 body:not(.loading) p,
 body:not(.loading) h1,
 body:not(.loading) h2,
@@ -103,7 +107,6 @@ nav h1 {
 
 nav.scrolled h1 {
   filter: blur(0px) !important;
-
   opacity: 1 !important;
 }
 
@@ -120,11 +123,17 @@ a.button {
   text-decoration: none;
   display: block;
   width: max-content;
+  max-width: 100%;
 }
 
 nav a:hover,
 a.button:hover {
   opacity: 0.6;
+}
+
+a {
+  max-width: 100%;
+  word-break: break-all;
 }
 
 /* Button */
@@ -373,6 +382,7 @@ td {
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 .project-specification div {
@@ -404,6 +414,7 @@ td {
   display: flex;
   gap: 1.2rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .skills-category li {

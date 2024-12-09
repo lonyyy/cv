@@ -1,0 +1,55 @@
+@media screen and (max-width: 950px) {
+  .me-section h1 {
+    font-size: 3.6rem;
+  }
+
+  .project-content__top {
+    flex-direction: column;
+  }
+
+  .projects-section {
+    flex-direction: column;
+  }
+
+  .me-section__img-background {
+    margin: 0;
+  }
+
+  nav {
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+
+  nav h1 {
+    display: none;
+  }
+
+  nav.active {
+    opacity: 1;
+    pointer-events: all;
+    filter: blur(0);
+    backdrop-filter: blur(20px) !important;
+  }
+
+  .burger-menu-button {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+  }
+
+  .formation-section {
+    margin: 0;
+    padding: 2.5rem;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    backdrop-filter: none;
+  }
+}

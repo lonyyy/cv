@@ -9,20 +9,53 @@
       href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <meta
+      name="description"
+      content="Découvrez le CV numérique de Lony Michaux, étudiant en informatique à l'Université de Lille."
+    />
+
+    <meta property="og:title" content="Lony Michaux — CV numérique" />
+
+    <meta
+      property="og:description"
+      content="Découvrez le CV numérique de Lony Michaux, étudiant en informatique à l'Université de Lille."
+    />
+
+    <meta property="og:image" content="assets/images/favicon.png" />
+
+    <meta property="og:url" content="https://lonyyy.github.io/cv" />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta property="og:site_name" content="Lony Michaux — CV numérique" />
+
     <title>Lony Michaux — CV numérique</title>
   </head>
   <body class="loading">
-    <nav>
-      <h1>Lony MICHAUX</h1>
+    <header>
+      <img
+        class="burger-menu-button"
+        src="assets/images/menu.svg"
+        alt="Burger menu"
+      />
 
-      <a href="#my-formation">Ma formation</a>
-      <a href="#my-projects">Mes projets</a>
-      <a href="#my-skills">Mes compétences</a>
-      <a class="button" href="mailto:michaux.lony@gmail.com">Me contacter</a>
-    </nav>
+      <nav>
+        <h1>Lony MICHAUX</h1>
+
+        <a href="#my-formation">Ma formation</a>
+        <a href="#my-projects">Mes projets</a>
+        <a href="#my-skills">Mes compétences</a>
+        <a class="button" href="mailto:michaux.lony@gmail.com">Me contacter</a>
+      </nav>
+    </header>
 
     <main>
       <section class="me-section">
@@ -54,40 +87,36 @@
         <h1>Ma formation</h1>
 
         <table>
-          <div class="formation-section__line">
-            <tr>
-              <td>
-                <h3>2023 - ajd.</h3>
-              </td>
-              <td>
-                <h3>BUT informatique</h3>
-                <p>
-                  2ème année, Parcours réalisation d'applications : conception,
-                  développement, validation
-                </p>
-                <img
-                  class="formation-section__logo"
-                  src="./assets/images/universite_lille.png"
-                  alt="Logo Université de Lille"
-                  width="140"
-                />
-              </td>
-            </tr>
-          </div>
+          <tr>
+            <td>
+              <h3>2023 - ajd.</h3>
+            </td>
+            <td>
+              <h3>BUT informatique</h3>
+              <p>
+                2ème année, Parcours réalisation d'applications : conception,
+                développement, validation
+              </p>
+              <img
+                class="formation-section__logo"
+                src="./assets/images/universite_lille.png"
+                alt="Logo Université de Lille"
+                width="140"
+              />
+            </td>
+          </tr>
 
-          <div class="formation-section__line">
-            <tr>
-              <td>
-                <h3>2023</h3>
-              </td>
-              <td>
-                <h3>Baccalauréat</h3>
-                <p>N.S.I, Mathématiques</p>
+          <tr>
+            <td>
+              <h3>2023</h3>
+            </td>
+            <td>
+              <h3>Baccalauréat</h3>
+              <p>N.S.I, Mathématiques</p>
 
-                <i>Lycée Polyvalent Ernest Couteaux, Saint-Amand-les-Eaux</i>
-              </td>
-            </tr>
-          </div>
+              <i>Lycée Polyvalent Ernest Couteaux, Saint-Amand-les-Eaux</i>
+            </td>
+          </tr>
         </table>
       </section>
 
