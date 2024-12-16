@@ -17,7 +17,8 @@ h3,
 h4,
 h5,
 h6,
-a {
+a,
+button {
   filter: blur(10px);
   transform: translateY(10px);
   opacity: 0.6;
@@ -35,7 +36,8 @@ body:not(.loading) h3,
 body:not(.loading) h4,
 body:not(.loading) h5,
 body:not(.loading) h6,
-body:not(.loading) a {
+body:not(.loading) a,
+body:not(.loading) button {
   filter: blur(0);
   transform: translateY(0);
   opacity: 1;
@@ -119,16 +121,24 @@ nav a {
 }
 
 nav a,
+button,
 a.button {
   text-decoration: none;
   display: block;
   width: max-content;
   max-width: 100%;
+  cursor: pointer;
+  border: none;
+  font-size: 0.9rem;
 }
 
 nav a:hover,
 a.button:hover {
   opacity: 0.6;
+}
+
+button:hover {
+  opacity: 0.6 !important;
 }
 
 a {
@@ -145,6 +155,11 @@ button,
   color: black;
   padding: 0.8rem 1.5rem 0.6rem 1.5rem;
   border-radius: 5rem;
+}
+
+button.secondary {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
 }
 
 /* SECTIONS */
@@ -299,7 +314,7 @@ td {
 
 .projects-section {
   display: flex;
-  gap: 4rem;
+  gap: 6rem;
   margin: 3rem 4rem 0 4rem;
 }
 
@@ -312,6 +327,7 @@ td {
   gap: 0.5rem;
   text-decoration: none;
   opacity: 0.2 !important;
+  word-break: keep-all !important;
 }
 
 .projects-timeline__project.active {
@@ -340,17 +356,27 @@ td {
 }
 
 .project-content {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 1rem;
 }
 
 .project-content__top {
   display: flex;
+  flex-direction: column;
   gap: 3rem;
+}
+
+p {
+  margin: 0.2rem 0;
+  text-align: justify;
 }
 
 .project-description p {
   margin: 1.2rem 0;
-  text-align: justify;
 }
 
 .project-screenshots {
@@ -370,7 +396,6 @@ td {
   object-fit: contain;
   border-radius: 1rem;
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.08);
-
   transition: transform 0.5s;
 }
 
@@ -379,11 +404,19 @@ td {
 }
 
 .project-specifications {
+  gap: 1.8rem;
+  margin: 1rem 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease, filter 0.3s ease;
+  filter: blur(10px);
+}
+
+.project-technos-and-versions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .project-specification div {

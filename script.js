@@ -88,3 +88,42 @@ const burgerMenuButton = document.querySelector(".burger-menu-button");
 burgerMenuButton.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
+
+const btnProjectDetails = document.querySelectorAll(".project-btn-details");
+
+btnProjectDetails.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const projectSpecs =
+      btn.parentElement.parentElement.parentElement.querySelector(
+        ".project-specifications"
+      );
+
+    if (projectSpecs.classList.contains("active")) {
+      projectSpecs.style.height = `${projectSpecs.scrollHeight}px`;
+
+      setTimeout(() => {
+        projectSpecs.style.height = "0px";
+        projectSpecs.style.filter = "blur(10px)";
+      }, 100);
+
+      projectSpecs.classList.remove("active");
+    } else {
+      projectSpecs.style.height = `${projectSpecs.scrollHeight}px`;
+      projectSpecs.classList.add("active");
+
+      projectSpecs.addEventListener(
+        "transitionend",
+        () => {
+          projectSpecs.style.height = "auto";
+        },
+        {
+          once: true,
+        }
+      );
+
+      setTimeout(() => {
+        projectSpecs.style.filter = "none";
+      }, 100);
+    }
+  });
+});
