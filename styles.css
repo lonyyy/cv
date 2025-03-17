@@ -331,6 +331,10 @@ td {
   padding: 1rem 0;
 }
 
+td h3 {
+  margin-right: 12px;
+}
+
 .projects-list {
   position: sticky;
   top: 8rem;

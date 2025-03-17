@@ -73,4 +73,8 @@
   .project-specifications {
     flex-wrap: wrap;
   }
+
+  .projects-timeline__project {
+    opacity: 1 !important;
+  }
 }
