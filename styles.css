@@ -344,15 +344,16 @@ td {
 }
 
 .project-logo {
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   object-fit: contain;
+  margin-bottom: 0.2rem;
 }
 
 .project-logo-and-title {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 .project-content {
@@ -557,4 +558,30 @@ footer a {
 
 footer a:hover {
   opacity: 0.6;
+}
+
+#image-preview {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: filter 1.2s, opacity 0.2s, transform 0.5s;
+  z-index: 100;
+}
+
+#image-preview img {
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  object-fit: contain;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+#project-lillochat .project-logo {
+  border-radius: 10px;
 }

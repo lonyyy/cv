@@ -2,6 +2,8 @@ const body = document.querySelector("body");
 
 const nav = document.querySelector("nav");
 
+const imagePreview = document.querySelector("#image-preview");
+
 window.addEventListener("scroll", () => {
   const scrolled = window.scrollY;
 
@@ -126,4 +128,30 @@ btnProjectDetails.forEach((btn) => {
       }, 100);
     }
   });
+});
+
+imagePreview.addEventListener("click", closePreview);
+
+function closePreview() {
+  imagePreview.style.opacity = 0;
+  imagePreview.style.pointerEvents = "none";
+}
+
+function showInPreview(event) {
+  imagePreview.querySelector("img").src = event.target.src;
+
+  imagePreview.style.opacity = 1;
+  imagePreview.style.pointerEvents = "all";
+}
+
+document
+  .querySelectorAll(".project-screenshots-carousel")
+  .forEach((carousel) => {
+    carousel.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("click", showInPreview);
+    });
+  });
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Esc") closePreview();
 });
