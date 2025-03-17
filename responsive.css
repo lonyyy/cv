@@ -1,6 +1,6 @@
 @media screen and (max-width: 950px) {
   .me-section h1 {
-    font-size: 3.6rem;
+    font-size: 3.7rem;
   }
 
   .project-content__top {
@@ -36,7 +36,7 @@
   .burger-menu-button {
     display: block;
     position: fixed;
-    top: 20px;
+    top: 30px;
     right: 30px;
     width: 30px;
     height: 30px;
@@ -60,5 +60,17 @@
 
   .hobbies-section {
     margin: 2.2rem;
+  }
+
+  .me-section .me-section__description {
+    width: 70%;
+  }
+
+  .project-screenshots-carousel img {
+    width: 100%;
+  }
+
+  .project-specifications {
+    flex-wrap: wrap;
   }
 }

@@ -153,5 +153,29 @@ document
   });
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Esc") closePreview();
+  if (event.key === "Escape") closePreview();
 });
+
+const isTouchScreen =
+  "ontouchstart" in window || navigator.msMaxTouchPoints > 0;
+
+if (!isTouchScreen) {
+  const cardsEffects = document.querySelectorAll(".card-effect");
+
+  cardsEffects.forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const { left, top, width, height } = card.getBoundingClientRect();
+      const x = (e.clientX - left) / width - 0.5;
+      const y = (e.clientY - top) / height - 0.5;
+
+      const rotateX = y * -2;
+      const rotateY = x * 2;
+
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+      card.style.transform = "perspective(1000px) rotateX(0) rotateY(0)";
+    });
+  });
+}
