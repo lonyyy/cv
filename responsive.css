@@ -77,4 +77,25 @@
   .projects-timeline__project {
     opacity: 1 !important;
   }
+
+  .experience-section,
+  .soft-skills-section,
+  .reflection-section {
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+
+  .experience-card,
+  .reflection-card {
+    padding: 2rem 1.6rem;
+  }
+
+  .experience-grid,
+  .reflection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-header {
+    flex-wrap: wrap;
+  }
 }

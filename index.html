@@ -17,14 +17,14 @@
 
     <meta
       name="description"
-      content="Découvrez le CV numérique de Lony Michaux, étudiant en informatique à l'Université de Lille."
+      content="Portfolio de Lony Michaux — alternant développeur mobile (Flutter) chez Paxity et étudiant en BUT Informatique à l'Université de Lille."
     />
 
     <meta property="og:title" content="Lony Michaux — Portfolio" />
 
     <meta
       property="og:description"
-      content="Découvrez mon portfolio, étudiant en informatique à l'Université de Lille."
+      content="Alternant développeur mobile (Flutter) chez Paxity, étudiant en BUT Informatique à l'Université de Lille. Découvrez mon expérience, mes compétences et ma façon de travailler."
     />
 
     <meta property="og:image" content="assets/images/favicon.png" />
@@ -56,10 +56,11 @@
       <nav>
         <h1>Lony MICHAUX</h1>
 
-        <a href="#my-formation">Ma formation</a>
-        <a href="#my-projects">Mes projets</a>
+        <a href="#my-experience">Mon expérience</a>
         <a href="#my-skills">Mes compétences</a>
-        <a href="#my-hobbies">Mes loisirs</a>
+        <a href="#my-soft-skills">Soft skills</a>
+        <a href="#my-reflection">Connaissance de soi</a>
+        <a href="#my-projects">Mes projets</a>
         <a class="button" href="mailto:michaux.lony@gmail.com">Me contacter</a>
       </nav>
     </header>
@@ -75,62 +76,497 @@
         <div class="me-section__description">
           <h1>Lony MICHAUX</h1>
           <p class="me-section__description-paragraph">
-            Étudiant en deuxième année de BUT Informatique à l’Université de
-            Lille, je suis actuellement à la recherche d'une alternance en
-            développement d'applications mobiles / web à partir de septembre
-            2025.
+            Alternant développeur mobile chez <b>Paxity</b> et étudiant en 3ᵉ
+            année de BUT Informatique à l'Université de Lille. Je conçois et
+            développe le frontend d'une application mobile, de l'UI/UX jusqu'à
+            la mise en production. Mon objectif : poursuivre en master en
+            alternance pour m'épanouir comme développeur mobile.
           </p>
+
+          <div class="me-section__buttons">
+            <a class="button" href="mailto:michaux.lony@gmail.com"
+              >Me contacter</a
+            >
+            <a
+              class="button secondary"
+              href="assets/cv/Lony-Michaux-CV.pdf"
+              download
+              >Télécharger mon CV (PDF)</a
+            >
+          </div>
         </div>
 
         <div>
-          <a href="#my-formation" class="scroll-next">
+          <a href="#my-experience" class="scroll-next">
             <img src="assets/images/arrow.svg" width="20" height="20" alt="" />
-            <span>Ma formation</span>
+            <span>Mon expérience</span>
           </a>
         </div>
       </section>
 
-      <section class="formation-section card-effect" id="my-formation">
-        <h1>Ma formation</h1>
+      <section
+        class="experience-section"
+        id="my-experience"
+        data-aos="fade-right"
+      >
+        <h1>Mon expérience</h1>
+        <p class="section-subtitle">
+          Mon alternance : mon rôle réel, mes missions et ma façon de
+          travailler au quotidien.
+        </p>
 
-        <table>
-          <tr>
-            <td>
-              <h3>2023 - ajd.</h3>
-            </td>
-            <td>
-              <h3>BUT informatique</h3>
+        <div class="experience-card card-effect">
+          <div class="experience-header">
+            <img
+              src="assets/images/logos/paxity.png"
+              class="experience-logo"
+              alt="Logo Paxity"
+              onerror="this.style.display='none'"
+            />
+            <div class="experience-header-text">
+              <h2>Paxity — Alternant développeur mobile</h2>
+              <small
+                >Septembre 2025 – aujourd'hui · Startup de l'Économie Sociale et
+                Solidaire (ESS)</small
+              >
+            </div>
+          </div>
+
+          <p class="experience-intro">
+            Paxity est une jeune startup de l'Économie Sociale et Solidaire qui
+            propose des solutions simples et concrètes pour la gestion des
+            incidents dans les bâtiments, via des QR codes. Au sein d'une petite
+            équipe de 3 personnes, je suis le développeur de l'application
+            mobile : je porte l'ensemble du frontend, du code jusqu'à
+            l'expérience utilisateur. Le rythme était d'une semaine sur deux ;
+            depuis mi-mars 2026, je suis à temps plein dans l'entreprise pour
+            préparer la sortie de l'application.
+          </p>
+
+          <div class="experience-grid">
+            <div class="experience-block">
+              <h3>Mes missions</h3>
+              <ul>
+                <li>Développer le frontend de l'application mobile en Flutter</li>
+                <li>Concevoir et améliorer l'UI / UX</li>
+                <li>Intégrer les API du back pour connecter l'appli aux données</li>
+                <li>Préparer et gérer la mise en production sur les stores</li>
+              </ul>
+            </div>
+
+            <div class="experience-block">
+              <h3>Mon autonomie</h3>
               <p>
-                2ème année, Parcours réalisation d'applications : conception,
-                développement, validation
+                Au début, mon tuteur me guidait beaucoup. Aujourd'hui, il
+                m'indique l'objectif et je sais où chercher et comment avancer
+                par moi-même. J'ai gagné en autonomie sur le développement et la
+                mise en production ; la conception de fonctionnalités
+                entièrement nouvelles reste le terrain où je continue de
+                progresser.
               </p>
-              <img
-                class="formation-section__logo"
-                src="./assets/images/universite_lille.png"
-                alt="Logo Université de Lille"
-                width="140"
-              />
-            </td>
-          </tr>
+            </div>
 
-          <tr>
-            <td>
-              <h3>2023</h3>
-            </td>
-            <td>
-              <h3>Baccalauréat</h3>
-              <p>N.S.I, Mathématiques</p>
+            <div class="experience-block">
+              <h3>Mes interactions</h3>
+              <p>
+                L'équipe compte trois personnes : mon tuteur (développeur
+                également, qui gère le back), une alternante commerciale et moi.
+                Je travaille en autonomie sur le frontend pendant qu'il développe
+                le back ; nous échangeons en continu et avançons en confiance.
+                L'application n'étant pas encore publiée, les utilisateurs
+                finaux arriveront avec le lancement.
+              </p>
+            </div>
 
-              <i>Lycée Polyvalent Ernest Couteaux, Saint-Amand-les-Eaux</i>
-            </td>
-          </tr>
-        </table>
+            <div class="experience-block">
+              <h3>Ce dont je suis fier</h3>
+              <p>
+                Avoir modernisé l'interface de l'application par rapport au site
+                existant. J'ai apporté ma « fraîcheur » de jeune développeur et
+                mon expérience personnelle pour proposer une UI plus actuelle et
+                agréable à utiliser.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section" id="my-skills" data-aos="fade-right">
+        <h1>Mes compétences techniques</h1>
+        <p class="section-subtitle">
+          Compétences mobilisées en contexte professionnel et lors de mes
+          projets, avec mon niveau de maîtrise.
+        </p>
+
+        <div class="key-skills">
+          <div class="key-skill card-effect">
+            <div class="key-skill-head">
+              <h3>Flutter / Dart</h3>
+              <span class="level level-3">Confirmé</span>
+            </div>
+            <p>
+              Le cœur de mon alternance : je développe l'application mobile
+              Paxity de bout en bout. Une technologie apprise en autodidacte
+              (mon projet Yudel) puis consolidée en entreprise.
+            </p>
+          </div>
+
+          <div class="key-skill card-effect">
+            <div class="key-skill-head">
+              <h3>UI / UX mobile</h3>
+              <span class="level level-2">Autonome</span>
+            </div>
+            <p>
+              Conception et amélioration d'interfaces claires et cohérentes.
+              J'ai modernisé l'UI de l'application et je veille en permanence à
+              la simplicité d'usage.
+            </p>
+          </div>
+
+          <div class="key-skill card-effect">
+            <div class="key-skill-head">
+              <h3>Intégration d'API REST</h3>
+              <span class="level level-2">Autonome</span>
+            </div>
+            <p>
+              Je connecte le frontend au back développé par mon tuteur : appels
+              réseau, gestion de l'état et des données serveur.
+            </p>
+          </div>
+
+          <div class="key-skill card-effect">
+            <div class="key-skill-head">
+              <h3>Mise en production (stores)</h3>
+              <span class="level level-2">Autonome</span>
+            </div>
+            <p>
+              Préparation et publication sur le Play Store et l'App Store :
+              builds, signatures, configuration et respect des exigences des
+              plateformes.
+            </p>
+          </div>
+
+          <div class="key-skill card-effect">
+            <div class="key-skill-head">
+              <h3>Sécurité & qualité</h3>
+              <span class="level level-1">En progression</span>
+            </div>
+            <p>
+              Je vérifie systématiquement la sécurité et la qualité du code
+              avant chaque livraison, une exigence que je continue
+              d'approfondir.
+            </p>
+          </div>
+        </div>
+
+        <div class="skills-list">
+          <div class="skills-category">
+            <h3>Langages</h3>
+            <ul>
+              <li>
+                <img src="assets/images/skills/langages/java.png" alt="Java" />
+                Java
+              </li>
+              <li>
+                <img src="assets/images/skills/langages/dart.png" alt="Dart" />
+                Dart
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/langages/html-css.png"
+                  alt="HTML/CSS"
+                />
+                HTML/CSS
+              </li>
+              <li>
+                <img src="assets/images/skills/langages/js.png" alt="JS" />
+                JavaScript
+              </li>
+              <li>
+                <img src="assets/images/skills/langages/sql.png" alt="SQL" />
+                SQL
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/langages/python.png"
+                  alt="Python"
+                />
+                Python
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h3>Outils</h3>
+            <ul>
+              <li>
+                <img src="assets/images/skills/tools/git.png" alt="Git" />
+                Git
+              </li>
+              <li>
+                <img src="assets/images/skills/tools/vscode.png" alt="VSCode" />
+
+                Visual Studio Code
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/tools/intellij.png"
+                  alt="IntelliJ Idea"
+                />
+
+                IntelliJ IDEA
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/tools/androidstudio.png"
+                  alt="Android Studio"
+                />
+
+                Android Studio
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h3>Langues</h3>
+            <ul>
+              <li>
+                <img src="assets/images/skills/flags/france.webp" />
+                Français (langue maternelle)
+              </li>
+              <li>
+                <img src="assets/images/skills/flags/uk.png" />
+                Anglais (niveau B2)
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h3>Logiciels</h3>
+            <ul>
+              <li>
+                <img
+                  src="assets/images/skills/software/photoshop.png"
+                  alt="Photoshop"
+                />
+                Adobe Photoshop
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/software/audition.png"
+                  alt="Audition"
+                />Adobe Audition
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/software/premierepro.png"
+                  alt="Premiere Pro"
+                />
+                Adobe Premiere Pro
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/software/resolve.png"
+                  alt="Photoshop"
+                />
+                DaVinci Resolve
+              </li>
+              <li>
+                <img
+                  src="assets/images/skills/software/figma.png"
+                  alt="Figma"
+                />Figma
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="soft-skills-section"
+        id="my-soft-skills"
+        data-aos="fade-up"
+      >
+        <h1>Mes soft skills</h1>
+        <p class="section-subtitle">
+          Compétences comportementales renforcées en entreprise, illustrées par
+          des situations concrètes — et ce qu'elles disent de ma façon de
+          fonctionner.
+        </p>
+
+        <div class="soft-skills-grid">
+          <div class="soft-skill-card card-effect">
+            <h2>Ma manière d'être</h2>
+
+            <div class="soft-skill">
+              <h3>Gestion du stress et de la pression</h3>
+              <p class="soft-skill-situation">
+                <span class="tag">Situation</span> À l'approche de la mise en
+                production sur les stores, j'ai dû tenir une deadline serrée.
+                J'ai gardé mon calme en découpant le travail, en priorisant les
+                tâches par ordre d'importance et en communiquant en continu avec
+                mon tuteur.
+              </p>
+              <p class="soft-skill-analysis">
+                J'ai compris que je gère d'autant mieux la pression que je
+                structure et que je communique : l'organisation est mon antidote
+                au stress.
+              </p>
+            </div>
+
+            <div class="soft-skill">
+              <h3>Engagement et sens des responsabilités</h3>
+              <p class="soft-skill-situation">
+                <span class="tag">Situation</span> Depuis mi-mars, je suis à
+                temps plein dans l'entreprise et porte seul le frontend de
+                l'application à l'approche de son lancement.
+              </p>
+              <p class="soft-skill-analysis">
+                Je me sais assidu et pleinement investi : on peut compter sur moi
+                pour mener une mission jusqu'au bout.
+              </p>
+            </div>
+          </div>
+
+          <div class="soft-skill-card card-effect">
+            <h2>Ma manière de communiquer</h2>
+
+            <div class="soft-skill">
+              <h3>Vulgarisation et pédagogie</h3>
+              <p class="soft-skill-situation">
+                <span class="tag">Situation</span> Mon tuteur n'a pas toujours le
+                temps de creuser certains sujets, comme le processus de
+                publication sur les stores. Je le prends alors en main : je
+                recherche, j'analyse, puis je lui explique clairement avant de
+                passer à l'action.
+              </p>
+              <p class="soft-skill-analysis">
+                J'aime rendre le complexe accessible. Je sais aussi que
+                vulgariser des concepts plus théoriques reste un point que je
+                veux continuer de travailler.
+              </p>
+            </div>
+
+            <div class="soft-skill">
+              <h3>Réception du feedback</h3>
+              <p class="soft-skill-situation">
+                <span class="tag">Situation</span> Les retours de mon tuteur sont
+                honnêtes et directs, qu'il s'agisse de me conforter ou de me
+                corriger.
+              </p>
+              <p class="soft-skill-analysis">
+                Je les accueille comme un levier de progression plutôt que comme
+                une critique : c'est ainsi que j'avance le plus vite.
+              </p>
+            </div>
+          </div>
+
+          <div class="soft-skill-card card-effect">
+            <h2>Travailler avec les autres</h2>
+
+            <div class="soft-skill">
+              <h3>Coopération en petite équipe</h3>
+              <p class="soft-skill-situation">
+                <span class="tag">Situation</span> Dans une équipe de trois, la
+                coopération est directe : je gère le frontend, mon tuteur le
+                back, et nous synchronisons nos avancées en continu.
+              </p>
+              <p class="soft-skill-analysis">
+                Je sais trouver ma place dans un collectif réduit et avancer en
+                confiance, sans avoir besoin d'être surveillé.
+              </p>
+            </div>
+
+            <div class="soft-skill">
+              <h3>Gestion des désaccords</h3>
+              <p class="soft-skill-situation">
+                <span class="tag">Situation</span> Il nous arrive d'avoir des
+                avis différents sur l'UI/UX — l'emplacement d'un bouton,
+                l'utilité d'une fonctionnalité. On en discute dans le calme, avec
+                écoute et respect, et on aboutit toujours à un compromis.
+              </p>
+              <p class="soft-skill-analysis">
+                Je ne vis pas le désaccord comme un conflit mais comme un moyen
+                d'améliorer le produit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="reflection-section"
+        id="my-reflection"
+        data-aos="fade-up"
+      >
+        <h1>Connaissance de soi</h1>
+        <p class="section-subtitle">
+          Ce que cette alternance m'a appris sur moi-même.
+        </p>
+
+        <div class="reflection-card card-effect">
+          <p class="reflection-intro">
+            Cette alternance a été un véritable révélateur. En me confrontant au
+            réel, j'ai autant appris sur le métier que sur moi-même — et
+            notamment que j'avais bien plus de capacités que je ne le pensais.
+          </p>
+
+          <div class="reflection-grid">
+            <div class="reflection-block">
+              <h3>Mes points forts</h3>
+              <ul>
+                <li>Assiduité et investissement</li>
+                <li>Flexibilité et adaptabilité</li>
+                <li>Capacité à apprendre en autonomie (Flutter appris seul)</li>
+                <li>Organisation et sang-froid sous pression</li>
+              </ul>
+            </div>
+
+            <div class="reflection-block">
+              <h3>Mes axes de progrès</h3>
+              <ul>
+                <li>
+                  Gagner en autonomie sur la conception de fonctionnalités
+                  entièrement nouvelles
+                </li>
+                <li>
+                  Mieux expliquer les concepts théoriques, pour les rendre aussi
+                  clairs que le reste de ma communication
+                </li>
+              </ul>
+            </div>
+
+            <div class="reflection-block">
+              <h3>Les retours qui me font avancer</h3>
+              <p>
+                Les retours de mon tuteur sont honnêtes et toujours gratifiants.
+                Ils me confortent dans mes choix quand c'est mérité, et me
+                recadrent quand il le faut — c'est exactement le cadre dans
+                lequel je progresse le mieux.
+              </p>
+            </div>
+
+            <div class="reflection-block">
+              <h3>Mes besoins pour évoluer</h3>
+              <p>
+                Pour continuer à grandir, j'ai besoin d'un environnement qui me
+                fait confiance tout en me poussant à sortir de ma zone de
+                confort. C'est pourquoi je souhaite poursuivre en master en
+                alternance, idéalement dans la continuité de Paxity.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="projects-section" id="my-projects" data-aos="fade-right">
         <div>
           <div class="projects-list">
             <h1>Mes projets</h1>
+            <p class="section-subtitle">
+              Projets universitaires et personnels qui ont forgé mes bases —
+              dont Yudel, à l'origine de ma maîtrise de Flutter.
+            </p>
 
             <div class="projects-timeline">
               <a
@@ -654,140 +1090,54 @@
         </div>
       </section>
 
-      <section class="skills-section" id="my-skills" data-aos="fade-right">
-        <h1>Mes compétences</h1>
+      <section class="formation-section card-effect" id="my-formation">
+        <h1>Ma formation</h1>
 
-        <div class="skills-list">
-          <div class="skills-category">
-            <h3>Langages</h3>
-            <ul>
-              <li>
-                <img src="assets/images/skills/langages/java.png" alt="Java" />
-                Java
-              </li>
-              <li>
-                <img src="assets/images/skills/langages/dart.png" alt="Dart" />
-                Dart
-              </li>
-              <li>
-                <img
-                  src="assets/images/skills/langages/html-css.png"
-                  alt="HTML/CSS"
-                />
-                HTML/CSS
-              </li>
-              <li>
-                <img src="assets/images/skills/langages/js.png" alt="JS" />
-                JavaScript
-              </li>
-              <li>
-                <img src="assets/images/skills/langages/sql.png" alt="SQL" />
-                SQL
-              </li>
-              <li>
-                <img
-                  src="assets/images/skills/langages/python.png"
-                  alt="Python"
-                />
-                Python
-              </li>
-            </ul>
-          </div>
+        <table>
+          <tr>
+            <td>
+              <h3>2026 →</h3>
+            </td>
+            <td>
+              <h3>Objectif : Master en alternance</h3>
+              <p>
+                Poursuite d'études en développement, idéalement dans la
+                continuité de mon alternance.
+              </p>
+            </td>
+          </tr>
 
-          <div class="skills-category">
-            <h3>Outils</h3>
-            <ul>
-              <li>
-                <img src="assets/images/skills/tools/git.png" alt="Git" />
-                Git
-              </li>
-              <li>
-                <img src="assets/images/skills/tools/vscode.png" alt="VSCode" />
+          <tr>
+            <td>
+              <h3>2023 - ajd.</h3>
+            </td>
+            <td>
+              <h3>BUT Informatique</h3>
+              <p>
+                3ᵉ année en alternance · Parcours réalisation d'applications :
+                conception, développement, validation
+              </p>
+              <img
+                class="formation-section__logo"
+                src="./assets/images/universite_lille.png"
+                alt="Logo Université de Lille"
+                width="140"
+              />
+            </td>
+          </tr>
 
-                Visual Studio Code
-              </li>
-              <li>
-                <img
-                  src="assets/images/skills/tools/intellij.png"
-                  alt="IntelliJ Idea"
-                />
+          <tr>
+            <td>
+              <h3>2023</h3>
+            </td>
+            <td>
+              <h3>Baccalauréat</h3>
+              <p>N.S.I, Mathématiques</p>
 
-                IntelliJ IDEA
-              </li>
-              <li>
-                <img
-                  src="assets/images/skills/tools/androidstudio.png"
-                  alt="Android Studio"
-                />
-
-                Android Studio
-              </li>
-            </ul>
-          </div>
-
-          <div class="skills-category">
-            <h3>Langues</h3>
-            <ul>
-              <li>
-                <img src="assets/images/skills/flags/france.webp" />
-                Français (langue maternelle)
-              </li>
-              <li>
-                <img src="assets/images/skills/flags/uk.png" />
-                Anglais (niveau B2)
-              </li>
-            </ul>
-          </div>
-
-          <div class="skills-category">
-            <h3>Logiciels</h3>
-            <ul>
-              <li>
-                <img
-                  src="assets/images/skills/software/photoshop.png"
-                  alt="Photoshop"
-                />
-                Adobe Photoshop
-              </li>
-              <li>
-                <img
-                  src="assets/images/skills/software/audition.png"
-                  alt="Audition"
-                />Adobe Audition
-              </li>
-              <li>
-                <img
-                  src="assets/images/skills/software/premierepro.png"
-                  alt="Premiere Pro"
-                />
-                Adobe Premiere Pro
-              </li>
-              <li>
-                <img
-                  src="assets/images/skills/software/resolve.png"
-                  alt="Photoshop"
-                />
-                DaVinci Resolve
-              </li>
-              <li>
-                <img
-                  src="assets/images/skills/software/figma.png"
-                  alt="Figma"
-                />Figma
-              </li>
-            </ul>
-          </div>
-
-          <div class="skills-category skills-category-soft-skills">
-            <h3>Soft skills</h3>
-            <ul>
-              <li>Communication</li>
-              <li>Créativité</li>
-              <li>Adaptabilité</li>
-              <li>Organisation</li>
-            </ul>
-          </div>
-        </div>
+              <i>Lycée Polyvalent Ernest Couteaux, Saint-Amand-les-Eaux</i>
+            </td>
+          </tr>
+        </table>
       </section>
 
       <section class="hobbies-section" id="my-hobbies" data-aos="fade-up">
@@ -871,8 +1221,6 @@
           </div>
         </div>
       </section>
-
-      <!-- TODO: Dernière section : Accéder au CV format PDF -->
     </main>
 
     <div id="image-preview">

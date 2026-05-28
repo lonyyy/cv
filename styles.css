@@ -621,3 +621,279 @@ footer a:hover {
 #project-lillochat .project-logo {
   border-radius: 10px;
 }
+
+/* Section subtitle (shared) */
+
+.section-subtitle {
+  opacity: 0.6;
+  font-size: 0.95rem;
+  margin-top: 0.6rem;
+  max-width: 65ch;
+  text-align: left;
+}
+
+/* Hero buttons */
+
+.me-section__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button.secondary {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+/* Experience section */
+
+.experience-section {
+  padding: 5rem 5rem 2rem 5rem;
+}
+
+.experience-card {
+  margin-top: 2.5rem;
+  padding: 2.5rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.02)
+  );
+  backdrop-filter: blur(20px);
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.experience-logo {
+  height: 52px;
+  width: auto;
+  max-width: 190px;
+  object-fit: contain;
+}
+
+.experience-header-text small {
+  opacity: 0.6;
+}
+
+.experience-intro {
+  margin-top: 1.5rem;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.experience-block {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.2rem;
+  padding: 1.4rem 1.6rem;
+}
+
+.experience-block h3 {
+  margin-bottom: 0.6rem;
+}
+
+.experience-block p {
+  text-align: left;
+  font-size: 0.92rem;
+  opacity: 0.88;
+}
+
+.experience-block ul {
+  padding-left: 1.1rem;
+}
+
+.experience-block li {
+  margin: 0.25rem 0;
+  font-size: 0.92rem;
+}
+
+/* Key skills (technical, with mastery level) */
+
+.key-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+.key-skill {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.2rem;
+  padding: 1.3rem 1.5rem;
+}
+
+.key-skill-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.key-skill-head h3 {
+  line-height: 1.2;
+}
+
+.key-skill p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  text-align: left;
+}
+
+.level {
+  font-size: 0.7rem;
+  padding: 0.35rem 0.7rem 0.2rem 0.7rem;
+  border-radius: 5rem;
+  white-space: nowrap;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.level-3 {
+  background-color: rgba(120, 220, 160, 0.18);
+}
+
+.level-2 {
+  background-color: rgba(120, 180, 240, 0.18);
+}
+
+.level-1 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Soft skills section */
+
+.soft-skills-section {
+  padding: 3rem 5rem;
+}
+
+.soft-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  align-items: start;
+}
+
+.soft-skill-card {
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  backdrop-filter: blur(20px);
+}
+
+.soft-skill-card > h2 {
+  margin-bottom: 0.5rem;
+}
+
+.soft-skill {
+  margin-top: 1.4rem;
+}
+
+.soft-skill h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.soft-skill-situation,
+.soft-skill-analysis {
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.soft-skill-situation {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-left: 2px solid rgba(255, 255, 255, 0.25);
+  padding: 0.7rem 1rem;
+  border-radius: 0.6rem;
+  margin: 0.4rem 0;
+}
+
+.soft-skill-analysis {
+  opacity: 0.78;
+  margin-top: 0.6rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.55;
+  margin-right: 0.4rem;
+}
+
+/* Reflection section (self-awareness) */
+
+.reflection-section {
+  padding: 3rem 5rem 5rem 5rem;
+}
+
+.reflection-card {
+  margin-top: 2.5rem;
+  padding: 2.5rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.02)
+  );
+  backdrop-filter: blur(20px);
+}
+
+.reflection-intro {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.reflection-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.reflection-block {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.2rem;
+  padding: 1.4rem 1.6rem;
+}
+
+.reflection-block h3 {
+  margin-bottom: 0.6rem;
+}
+
+.reflection-block ul {
+  padding-left: 1.1rem;
+}
+
+.reflection-block li {
+  margin: 0.3rem 0;
+  font-size: 0.92rem;
+}
+
+.reflection-block p {
+  font-size: 0.92rem;
+  opacity: 0.88;
+  text-align: left;
+}
